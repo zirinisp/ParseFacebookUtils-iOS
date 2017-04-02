@@ -1,4 +1,5 @@
 github "BoltsFramework/Bolts-ObjC" "1.8.4"
-github "erikdoe/OCMock" "v3.3.1"
-github "ParsePlatform/Parse-SDK-iOS-OSX" "1.14.1"
-github "facebook/facebook-ios-sdk" "sdk-version-4.14.0"
+github "erikdoe/OCMock" "v3.4"
+github "ParsePlatform/Parse-SDK-iOS-OSX" "1.14.3"
+github "adomanico/facebook-ios-sdk" "830cc8eff7c3d4615bd4d6a8cad238bf9f17bdb5"
+github "mylifeasdog/facebook-sdk-swift" "fed643b634bfe204b65840728c0eb4868ceab21a"

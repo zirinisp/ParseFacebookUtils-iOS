@@ -1,2 +1,2 @@
-github "facebook/facebook-ios-sdk" ~> 4.14
+github "mylifeasdog/facebook-sdk-swift" "master"
 github "ParsePlatform/Parse-SDK-iOS-OSX" ~> 1.14
