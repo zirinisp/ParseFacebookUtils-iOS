@@ -9,8 +9,8 @@
 /* Begin PBXBuildFile section */
 		64D931FB1EB97F99004071DC /* PFFacebookPrivateUtilities.h in Headers */ = {isa = PBXBuildFile; fileRef = 81E35FD21BAA6F8400348526 /* PFFacebookPrivateUtilities.h */; };
 		64D931FC1EB97F99004071DC /* PFFacebookPrivateUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = 81E35FD31BAA6F8400348526 /* PFFacebookPrivateUtilities.m */; };
-		64D931FD1EB97F9F004071DC /* ParseFacebookUtilsV4.h in Headers */ = {isa = PBXBuildFile; fileRef = 81EDD4B41B58AC7D002F69C0 /* ParseFacebookUtilsV4.h */; };
-		64D931FE1EB97F9F004071DC /* PFFacebookUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = 813DFC841AB2510300F25A08 /* PFFacebookUtils.h */; };
+		64D931FD1EB97F9F004071DC /* ParseFacebookUtilsV4.h in Headers */ = {isa = PBXBuildFile; fileRef = 81EDD4B41B58AC7D002F69C0 /* ParseFacebookUtilsV4.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		64D931FE1EB97F9F004071DC /* PFFacebookUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = 813DFC841AB2510300F25A08 /* PFFacebookUtils.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		64D931FF1EB97F9F004071DC /* PFFacebookUtils_Private.h in Headers */ = {isa = PBXBuildFile; fileRef = 81643D761AB79ABD00DD3E65 /* PFFacebookUtils_Private.h */; };
 		64D932001EB97F9F004071DC /* PFFacebookUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 813DFC851AB2510300F25A08 /* PFFacebookUtils.m */; };
 		64D932011EB97FA6004071DC /* PFFacebookAuthenticationProvider.h in Headers */ = {isa = PBXBuildFile; fileRef = 81EA09C91C178DED00B0F875 /* PFFacebookAuthenticationProvider.h */; };
@@ -446,9 +446,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				64D931FE1EB97F9F004071DC /* PFFacebookUtils.h in Headers */,
+				64D931FD1EB97F9F004071DC /* ParseFacebookUtilsV4.h in Headers */,
 				64D932031EB97FAC004071DC /* PFFacebookMobileAuthenticationProvider.h in Headers */,
 				64D932051EB97FAC004071DC /* PFFacebookMobileAuthenticationProvider_Private.h in Headers */,
-				64D931FD1EB97F9F004071DC /* ParseFacebookUtilsV4.h in Headers */,
 				64D932011EB97FA6004071DC /* PFFacebookAuthenticationProvider.h in Headers */,
 				64D931FB1EB97F99004071DC /* PFFacebookPrivateUtilities.h in Headers */,
 				64D931FF1EB97F9F004071DC /* PFFacebookUtils_Private.h in Headers */,
@@ -1040,6 +1040,7 @@
 				64D931F91EB97F54004071DC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		81CB98D11AB7905D00136FA5 /* Build configuration list for PBXNativeTarget "ParseFacebookUtilsV4-UnitTests" */ = {
 			isa = XCConfigurationList;
