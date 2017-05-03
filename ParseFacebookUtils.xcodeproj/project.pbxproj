@@ -7,6 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		64D931FB1EB97F99004071DC /* PFFacebookPrivateUtilities.h in Headers */ = {isa = PBXBuildFile; fileRef = 81E35FD21BAA6F8400348526 /* PFFacebookPrivateUtilities.h */; };
+		64D931FC1EB97F99004071DC /* PFFacebookPrivateUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = 81E35FD31BAA6F8400348526 /* PFFacebookPrivateUtilities.m */; };
+		64D931FD1EB97F9F004071DC /* ParseFacebookUtilsV4.h in Headers */ = {isa = PBXBuildFile; fileRef = 81EDD4B41B58AC7D002F69C0 /* ParseFacebookUtilsV4.h */; };
+		64D931FE1EB97F9F004071DC /* PFFacebookUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = 813DFC841AB2510300F25A08 /* PFFacebookUtils.h */; };
+		64D931FF1EB97F9F004071DC /* PFFacebookUtils_Private.h in Headers */ = {isa = PBXBuildFile; fileRef = 81643D761AB79ABD00DD3E65 /* PFFacebookUtils_Private.h */; };
+		64D932001EB97F9F004071DC /* PFFacebookUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 813DFC851AB2510300F25A08 /* PFFacebookUtils.m */; };
+		64D932011EB97FA6004071DC /* PFFacebookAuthenticationProvider.h in Headers */ = {isa = PBXBuildFile; fileRef = 81EA09C91C178DED00B0F875 /* PFFacebookAuthenticationProvider.h */; };
+		64D932021EB97FA6004071DC /* PFFacebookAuthenticationProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 81EA09CA1C178DED00B0F875 /* PFFacebookAuthenticationProvider.m */; };
+		64D932031EB97FAC004071DC /* PFFacebookMobileAuthenticationProvider.h in Headers */ = {isa = PBXBuildFile; fileRef = 81EA09C61C178DED00B0F875 /* PFFacebookMobileAuthenticationProvider.h */; };
+		64D932041EB97FAC004071DC /* PFFacebookMobileAuthenticationProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 81EA09C71C178DED00B0F875 /* PFFacebookMobileAuthenticationProvider.m */; };
+		64D932051EB97FAC004071DC /* PFFacebookMobileAuthenticationProvider_Private.h in Headers */ = {isa = PBXBuildFile; fileRef = 81EA09C81C178DED00B0F875 /* PFFacebookMobileAuthenticationProvider_Private.h */; };
 		8117C20D1D39BDDC0086B9FA /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8117C1C91D39BD6B0086B9FA /* Bolts.framework */; };
 		8117C20E1D39BDDC0086B9FA /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8117C1CC1D39BD6B0086B9FA /* Parse.framework */; };
 		8117C20F1D39BDDC0086B9FA /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8117C1CA1D39BD6B0086B9FA /* FBSDKCoreKit.framework */; };
@@ -86,6 +97,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		64D931F31EB97F54004071DC /* ParseFacebookUtilsV4.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ParseFacebookUtilsV4.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		64D932061EB98065004071DC /* Info-iOS-Dynamic.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Info-iOS-Dynamic.plist"; sourceTree = "<group>"; };
 		8117C1C91D39BD6B0086B9FA /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Bolts.framework; path = Carthage/Build/iOS/Bolts.framework; sourceTree = SOURCE_ROOT; };
 		8117C1CA1D39BD6B0086B9FA /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKCoreKit.framework; path = Carthage/Build/iOS/FBSDKCoreKit.framework; sourceTree = SOURCE_ROOT; };
 		8117C1CB1D39BD6B0086B9FA /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKLoginKit.framework; path = Carthage/Build/iOS/FBSDKLoginKit.framework; sourceTree = SOURCE_ROOT; };
@@ -140,6 +153,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		64D931EF1EB97F54004071DC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		81CB98C31AB7905D00136FA5 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -187,6 +207,7 @@
 				81CB98C61AB7905D00136FA5 /* ParseFacebookUtilsV4-UnitTests.xctest */,
 				F535C73B1B54B4A800A7D81E /* ParseFacebookTestApplicationV4.app */,
 				81FE7F8B1C17790400E6BD34 /* ParseFacebookUtilsV4.framework */,
+				64D931F31EB97F54004071DC /* ParseFacebookUtilsV4.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -308,6 +329,7 @@
 			children = (
 				81E41FB51C178BA200F5BF3F /* Info-iOS.plist */,
 				81E41FB61C178BA200F5BF3F /* Info-tvOS.plist */,
+				64D932061EB98065004071DC /* Info-iOS-Dynamic.plist */,
 				81B3F22A1AC9CA5300A92677 /* Localizable.strings */,
 			);
 			path = Resources;
@@ -419,6 +441,20 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
+		64D931F01EB97F54004071DC /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				64D931FE1EB97F9F004071DC /* PFFacebookUtils.h in Headers */,
+				64D932031EB97FAC004071DC /* PFFacebookMobileAuthenticationProvider.h in Headers */,
+				64D932051EB97FAC004071DC /* PFFacebookMobileAuthenticationProvider_Private.h in Headers */,
+				64D931FD1EB97F9F004071DC /* ParseFacebookUtilsV4.h in Headers */,
+				64D932011EB97FA6004071DC /* PFFacebookAuthenticationProvider.h in Headers */,
+				64D931FB1EB97F99004071DC /* PFFacebookPrivateUtilities.h in Headers */,
+				64D931FF1EB97F9F004071DC /* PFFacebookUtils_Private.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		81FE7F761C17790400E6BD34 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -449,6 +485,24 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
+		64D931F21EB97F54004071DC /* ParseFacebookUtilsV4-iOS-Dynamic */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 64D931FA1EB97F54004071DC /* Build configuration list for PBXNativeTarget "ParseFacebookUtilsV4-iOS-Dynamic" */;
+			buildPhases = (
+				64D931EE1EB97F54004071DC /* Sources */,
+				64D931EF1EB97F54004071DC /* Frameworks */,
+				64D931F01EB97F54004071DC /* Headers */,
+				64D931F11EB97F54004071DC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "ParseFacebookUtilsV4-iOS-Dynamic";
+			productName = "ParseFacebookUtilsV4-iOS-Dynamic";
+			productReference = 64D931F31EB97F54004071DC /* ParseFacebookUtilsV4.framework */;
+			productType = "com.apple.product-type.framework";
+		};
 		81CB98C51AB7905D00136FA5 /* ParseFacebookUtilsV4-UnitTests */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 81CB98D11AB7905D00136FA5 /* Build configuration list for PBXNativeTarget "ParseFacebookUtilsV4-UnitTests" */;
@@ -536,6 +590,10 @@
 				LastUpgradeCheck = 0730;
 				ORGANIZATIONNAME = "Parse, LLC";
 				TargetAttributes = {
+					64D931F21EB97F54004071DC = {
+						CreatedOnToolsVersion = 8.3.1;
+						ProvisioningStyle = Automatic;
+					};
 					81CB98C51AB7905D00136FA5 = {
 						CreatedOnToolsVersion = 6.2;
 						TestTargetID = F535C73A1B54B4A800A7D81E;
@@ -577,11 +635,19 @@
 				81CB98C51AB7905D00136FA5 /* ParseFacebookUtilsV4-UnitTests */,
 				F535C73A1B54B4A800A7D81E /* ParseFacebookTestApplicationV4 */,
 				81FE7F731C17790400E6BD34 /* ParseFacebookUtilsV4-tvOS */,
+				64D931F21EB97F54004071DC /* ParseFacebookUtilsV4-iOS-Dynamic */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		64D931F11EB97F54004071DC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		8139B1341A7BF6B5002BEF84 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -675,6 +741,17 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		64D931EE1EB97F54004071DC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				64D931FC1EB97F99004071DC /* PFFacebookPrivateUtilities.m in Sources */,
+				64D932021EB97FA6004071DC /* PFFacebookAuthenticationProvider.m in Sources */,
+				64D932041EB97FAC004071DC /* PFFacebookMobileAuthenticationProvider.m in Sources */,
+				64D932001EB97F9F004071DC /* PFFacebookUtils.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		81CB98C21AB7905D00136FA5 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -769,6 +846,130 @@
 			};
 			name = Release;
 		};
+		64D931F81EB97F54004071DC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/Carthage/Build/iOS",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = "$(SRCROOT)/Resources/Info-iOS-Dynamic.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.parse.facebookutils-ios";
+				PRODUCT_NAME = ParseFacebookUtilsV4;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		64D931F91EB97F54004071DC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/Carthage/Build/iOS",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = "$(SRCROOT)/Resources/Info-iOS-Dynamic.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.parse.facebookutils-ios";
+				PRODUCT_NAME = ParseFacebookUtilsV4;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 		81CB98CF1AB7905D00136FA5 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = F52CD64B1B5838620051AB86 /* ParseFacebookUtilsV4-UnitTests.xcconfig */;
@@ -831,6 +1032,14 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
+		};
+		64D931FA1EB97F54004071DC /* Build configuration list for PBXNativeTarget "ParseFacebookUtilsV4-iOS-Dynamic" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				64D931F81EB97F54004071DC /* Debug */,
+				64D931F91EB97F54004071DC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 		81CB98D11AB7905D00136FA5 /* Build configuration list for PBXNativeTarget "ParseFacebookUtilsV4-UnitTests" */ = {
 			isa = XCConfigurationList;
